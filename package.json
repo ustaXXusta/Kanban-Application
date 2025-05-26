@@ -1,0 +1,30 @@
+{
+  "name": "kanban-desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "build": {
+    "asar": true,
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "package.json",
+      "!**/tests/**",
+      "!**/*.md",
+      "!**/docs/**"
+    ],
+    "extraResources": [],
+    "compression": "maximum"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^36.3.1",
+    "electron-builder": "^26.0.12"
+  }
+}
